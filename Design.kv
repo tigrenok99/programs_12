@@ -1,0 +1,67 @@
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 5
+
+        Carousel:
+            direction: "bottom"
+
+            BoxLayout:
+                orientation: "vertical"
+                size: root.width, root.height
+
+                Image:							                                                # картинка
+                    source: 'photo_1.jpg'					                                    # путь к картинки
+                    allow_stretch: True					                                        # растянуть
+                    keep_ratio: False					                                        # держать соотношение
+                Label:
+                    text: "КОД 23-08"
+                    font_size: 40
+                    size_hint: (1,0.2)                                                          # Ширина и высота
+                    bold: True                                                                  # выделить жирным   
+                Label:
+                    text: "Мультимедийная программа для проведения февро-мартовских вечеринок. +8 \n Планета Земля. 2103 год. Компьютерные технологии..."
+                    text_size: cm(10), cm(3)
+                    pos_hint: {'center_x': 0.55}                                                 # Разместить по центру
+                Button:											                                # Кнопка
+                    text: "Подробнее"								                            # Текст
+                    #{'x', 'y', 'top', 'bottom', 'left', 'right', 'center_x', 'center_y'}
+                    size_hint: (1,0.2)								                            # Ширина и высота
+                    font_size: 20									                            # Величина букв (Ширифт)
+
+
+            BoxLayout:
+                orientation: "vertical"
+                size: root.width, root.height
+
+                Image:							                                                # картинка
+                    source: 'photo_2.jpg'					                                    # путь к картинки
+                    allow_stretch: True					                                        # растянуть
+                    keep_ratio: False					                                        # держать соотношение
+                Label:
+                    text: "Описание"
+                Button:											                                # Кнопка
+                    text: "Подробнее"								                            # Текст
+                    #{'x', 'y', 'top', 'bottom', 'left', 'right', 'center_x', 'center_y'}
+                    size_hint: (1,0.2)								                            # Ширина и высота
+                    font_size: 20									                            # Величина букв (Ширифт)
+
+
+
+            BoxLayout:
+                orientation: "vertical"
+                size: root.width, root.height
+
+                Image:							                                                # картинка
+                    source: 'photo_3.jpg'					                                    # путь к картинки
+                    allow_stretch: True					                                        # растянуть
+                    keep_ratio: False					                                        # держать соотношение
+                Label:
+                    text: "Описание"
+                Button:											                                # Кнопка
+                    text: "Подробнее"								                            # Текст
+                    #{'x', 'y', 'top', 'bottom', 'left', 'right', 'center_x', 'center_y'}
+                    size_hint: (1,0.2)								                            # Ширина и высота
+                    font_size: 20									                            # Величина букв (Ширифт)
+
